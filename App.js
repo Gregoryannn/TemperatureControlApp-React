@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = () => {
-    const [temperatureValue, setTemperatureValue] = useState(20);
+    const [temperatureValue, setTemperatureValue] = useState(10);
 
     returtn( <
         <
@@ -9,17 +9,19 @@ const App = () => {
         <
         div className = "temperature-display-container" >
         <
-        div className = "temperature-display" > 10 C < /div> < /
-        div >
+        div className = "temperature-display" > 10 C < /div>  <
+        /div >
 
         <
         div className = "button-container" > < /div> <
-        button > + < /button> <
-        button > - < /button>
+        button onClick = {
+            () => setTemperatureValue(temperatureValue + 1) } > + < /button>  <
+        button onClick = {
+            () => setTemperatureValue(temperatureValue + 1) } > - < /button>
 
         <
-        /div> < /
-        div >
+        /div>  <
+        /div>
 
     )
 
