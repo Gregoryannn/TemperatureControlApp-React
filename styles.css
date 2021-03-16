@@ -62,3 +62,15 @@ button:focus {
     justify-content: space-evenly;
     align-items: center;
 }
+
+.neutral {
+    background: rgb(184, 184, 184);
+}
+
+.cold {
+    background: #035aa6;
+}
+
+.hot {
+    background: #ff5200;
+}
